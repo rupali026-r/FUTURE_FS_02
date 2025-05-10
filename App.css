@@ -1,0 +1,209 @@
+/* src/App.css */
+/* src/App.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f8ff; /* Light blue background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50; /* Dark blue heading */
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.search-bar {
+  display: flex;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.search-bar input {
+  padding: 12px 15px;
+  border: none;
+  font-size: 16px;
+  flex-grow: 1;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 12px 20px;
+  background-color: #3498db; /* Blue button */
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+
+.search-bar button:hover {
+  background-color: #2980b9;
+}
+
+.error-message {
+  color: #e74c3c; /* Red error text */
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.weather-display,
+.forecast-display,
+.favorite-cities {
+  background-color: #ecf0f1; /* Light grey containers */
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.weather-display h2 {
+  color: #34495e; /* Dark grey city name */
+  margin-top: 0;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.weather-display p {
+  color: #666;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.weather-display button {
+  background-color: #2ecc71; /* Green save button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  outline: none;
+  margin-top: 15px;
+}
+
+.weather-display button:hover {
+  background-color: #27ae60;
+}
+
+.forecast-display h3 {
+  color: #34495e; /* Dark grey forecast heading */
+  font-size: 1.8em;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.forecast-display .daily-forecast {
+  display: flex;
+  overflow-x: auto;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+
+.forecast-display .forecast-day {
+  background-color: #f9f9f9; /* Light grey forecast day */
+  padding: 20px;
+  margin-right: 15px;
+  border-radius: 8px;
+  min-width: 220px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.forecast-display .forecast-day h4 {
+  color: #555;
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.forecast-display .forecast-item {
+  margin-bottom: 12px;
+}
+
+.forecast-display .forecast-item p {
+  color: #777;
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.favorite-cities h3 {
+  color: #34495e; /* Dark grey favorites heading */
+  font-size: 1.8em;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.favorite-cities ul {
+  list-style: none;
+  padding: 0;
+}
+
+.favorite-cities li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.favorite-cities li:last-child {
+  border-bottom: none;
+}
+
+.favorite-cities li span {
+  color: #555;
+  font-size: 1.1em;
+}
+
+.favorite-cities li button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+
+.favorite-cities li button:first-of-type {
+  background-color: #3498db; /* Blue load button */
+  color: white;
+}
+
+.favorite-cities li button:first-of-type:hover {
+  background-color: #2980b9;
+}
+
+.favorite-cities li button:last-of-type {
+  background-color: #e74c3c; /* Red remove button */
+  color: white;
+}
+
+.favorite-cities li button:last-of-type:hover {
+  background-color: #c0392b;
+}
